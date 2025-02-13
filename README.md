@@ -5,7 +5,7 @@
 ## 🚀 Tecnologías Utilizadas
 
 - ⚛️ **React 19**
-- 🎨 **MUI (Material UI) + Emotion**
+- 🎨 **MUI (Material UI)**
 - 🔥 **Redux Toolkit + React Redux** (manejo de estado global)
 - 🌐 **Axios** (para consumo de API)
 - 🧪 **ESLint + Prettier** (estandarización de código)
@@ -25,7 +25,7 @@
 
 ✅ Selección de temática y dificultad  
 ✅ Trivia de 5 preguntas con respuestas de múltiple opción  
-✅ Interfaz amigable e intuitiva con Material UI disponible en modo oscuro y claro
+✅ Interfaz amigable e intuitiva con Material UI disponible en modo oscuro y claro  
 ✅ Sistema de puntaje basado en respuestas correctas  
 ✅ Botón para reiniciar la partida o configurar una nueva
 
