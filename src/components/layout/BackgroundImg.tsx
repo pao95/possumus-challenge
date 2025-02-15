@@ -19,7 +19,7 @@ export const BackgroundImg = () => {
       {images.map((style, index) => (
         <img
           key={index}
-          src={theme.palette.mode === 'dark' ? gameLightSvg : gameDarkSvg}
+          src={theme.palette.mode === 'dark' ? gameDarkSvg : gameLightSvg}
           style={{
             position: 'absolute',
             width: '15vw',
