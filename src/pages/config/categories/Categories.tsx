@@ -25,6 +25,13 @@ const Categories = ({ handleChange, dataCategories }: Props) => {
             handleChange({ category: value?.id.toString() });
           }}
           fullWidth
+          slotProps={{
+            listbox: {
+              style: {
+                maxHeight: 150,
+              },
+            },
+          }}
           renderInput={(params) => <TextField {...params} label="Topic" color="secondary" />}
         />
       </Grid>
