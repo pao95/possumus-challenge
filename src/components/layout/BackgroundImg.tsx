@@ -9,6 +9,9 @@ const images = [
   { right: '12vw', bottom: '0' },
 ];
 
+const gameLightSvg = '/game-svg-light.svg';
+const gameDarkSvg = '/game-svg-dark.svg';
+
 export const BackgroundImg = () => {
   const theme = useTheme();
   return (
@@ -16,11 +19,7 @@ export const BackgroundImg = () => {
       {images.map((style, index) => (
         <img
           key={index}
-          src={
-            theme.palette.mode === 'dark'
-              ? '../src/assets/game-svg-dark.svg'
-              : '../src/assets/game-svg-light.svg'
-          }
+          src={theme.palette.mode === 'dark' ? gameDarkSvg : gameLightSvg}
           style={{
             position: 'absolute',
             width: '15vw',
