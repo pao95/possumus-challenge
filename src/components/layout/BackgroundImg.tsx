@@ -18,8 +18,8 @@ export const BackgroundImg = () => {
           key={index}
           src={
             theme.palette.mode === 'dark'
-              ? '../src/assets/game-svg-dark.svg'
-              : '../src/assets/game-svg-light.svg'
+              ? '../../public/game-svg-dark.svg'
+              : '../../public/game-svg-light.svg'
           }
           style={{
             position: 'absolute',
