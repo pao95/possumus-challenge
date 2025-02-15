@@ -9,7 +9,7 @@ const images = [
   { right: '12vw', bottom: '0' },
 ];
 
-const gameLightSvg = '/game-svg-dark.svg';
+const gameLightSvg = '/game-svg-light.svg';
 const gameDarkSvg = '/game-svg-dark.svg';
 
 export const BackgroundImg = () => {
