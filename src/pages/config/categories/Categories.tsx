@@ -25,6 +25,7 @@ const Categories = ({ handleChange, dataCategories }: Props) => {
             handleChange({ category: value?.id.toString() });
           }}
           fullWidth
+          disablePortal
           slotProps={{
             listbox: {
               style: {
