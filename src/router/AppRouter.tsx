@@ -15,7 +15,7 @@ export const AppRouter = () => {
         element={
           <SegRouter>
             <Routes>
-              <Route path="/game-questions/" element={<GamePage />} />
+              <Route path="/game-questions" element={<GamePage />} />
               <Route path="/score" element={<ScorePage />} />
             </Routes>
           </SegRouter>

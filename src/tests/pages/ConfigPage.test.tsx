@@ -3,22 +3,22 @@ import { ConfigPage } from '../../pages/config/ConfigPage';
 import renderWithContext from '../utils/renderWithContext';
 
 describe('ConfigPage Component', () => {
-  test('El botón "Start" debe estar deshabilitado al inicio', () => {
-    renderWithContext(<ConfigPage />);
+  test('The "Start" button should be disabled initially', () => {
+    renderWithContext(<ConfigPage />, {});
     expect(screen.getByRole('button', { name: 'Start' })).toBeDisabled();
   });
 
-  test('Seleccionar solo un nivel no habilita el botón', () => {
-    renderWithContext(<ConfigPage />, { config: { level: 'easy' } });
+  test('Selecting only a level does not enable the button', () => {
+    renderWithContext(<ConfigPage />, { config: { level: 'easy', category: '' } });
     expect(screen.getByRole('button', { name: 'Start' })).toBeDisabled();
   });
 
-  test('Seleccionar solo una categoria no habilita el botón', () => {
-    renderWithContext(<ConfigPage />, { config: { category: '1' } });
+  test('Selecting only a category does not enable the button', () => {
+    renderWithContext(<ConfigPage />, { config: { category: '1', level: '' } });
     expect(screen.getByRole('button', { name: 'Start' })).toBeDisabled();
   });
 
-  test('Seleccionar una categoría y un nivel habilita el botón', () => {
+  test('Selecting both a category and a level enables the button', () => {
     renderWithContext(<ConfigPage />, { config: { category: '1', level: 'easy' } });
     expect(screen.getByRole('button', { name: 'Start' })).toBeEnabled();
   });

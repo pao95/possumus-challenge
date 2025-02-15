@@ -8,7 +8,8 @@
 - 🎨 **MUI (Material UI)**
 - 🔥 **Redux Toolkit + React Redux** (manejo de estado global)
 - 🌐 **Axios** (para consumo de API)
-- 🧪 **ESLint + Prettier** (estandarización de código)
+- 🧪 **Vitest + React Testing Library** (pruebas)
+- 📏 **ESLint + Prettier** (estandarización de código)
 - 🛠 **TypeScript** (tipado estático)
 
 ## 📸 Capturas de Pantalla
@@ -54,4 +55,10 @@ npm run dev
 
 ```
 http://localhost:5173
+```
+
+4️⃣ Ejecutar test
+
+```bash
+npm test
 ```

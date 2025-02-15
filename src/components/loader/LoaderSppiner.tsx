@@ -6,8 +6,12 @@ export const LoaderSppiner = () => {
   const show = useSelector((state: RootState) => state.loader.show);
 
   return (
-    <Backdrop sx={(theme) => ({ color: theme.palette.secondary.main })} open={show}>
-      <CircularProgress color="inherit" />
+    <Backdrop
+      data-testid="backdrop"
+      sx={(theme) => ({ color: theme.palette.secondary.main })}
+      open={show}
+    >
+      <CircularProgress color="inherit" data-testid="circular-progress" />
     </Backdrop>
   );
 };

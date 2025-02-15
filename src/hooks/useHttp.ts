@@ -6,8 +6,8 @@ export interface HttpClient {
 }
 
 export interface apiRequest {
-  url: string; // URL de la solicitud
-  options: RequestInit; // Opciones para RequestInit, como método y cuerpo
+  url: string;
+  options: RequestInit;
 }
 
 export function useHttp(client: HttpClient = apiClient) {

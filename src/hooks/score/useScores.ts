@@ -1,19 +1,21 @@
-import { useRef } from 'react';
+import { useState } from 'react';
 
+// Manages the score of the game
 export const useScore = (numberOfQuestions: number) => {
-  const points = useRef(0);
+  const [points, setPoints] = useState(0);
 
   const addPointToScore = () => {
-    points.current += 1;
+    setPoints((prevPoints) => prevPoints + 1);
   };
 
   const handleResetScore = () => {
-    points.current = 0;
+    setPoints(0);
   };
+
   return {
     addPointToScore,
-    totalScore: (points.current / numberOfQuestions) * 100,
-    points: points.current,
+    totalScore: (points / numberOfQuestions) * 100,
+    points,
     handleResetScore,
   };
 };
